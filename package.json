@@ -1,0 +1,17 @@
+{
+  "name": "ai-crm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-Powered CRM for Lead Generation",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run start:dev",
+    "build": "cd frontend && npm run build && cd ../backend && npm run build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

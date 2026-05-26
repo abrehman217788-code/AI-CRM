@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+.next/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+prisma/*.prisma
+!prisma/schema.prisma
